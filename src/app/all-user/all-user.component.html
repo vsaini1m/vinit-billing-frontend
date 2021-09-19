@@ -1,0 +1,15 @@
+<table style="width: 100vw;" border="1">
+    <thead>
+        <th>Name</th> <th>Email</th> <th>Phone</th> <th>Address</th> <th>Zip</th> <th>delete</th> <th>update</th>
+    </thead>
+   
+    <tbody *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.phNumber}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.zipCode}}</td>
+        <td><a href="http://">delete</a></td>
+        <td><a href="http://">update</a></td>
+    </tbody>
+</table>

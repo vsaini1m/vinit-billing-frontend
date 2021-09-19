@@ -1,0 +1,22 @@
+.example-container {
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+   
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+
+  .example-spacer {
+    flex: 1 0.5 auto;
+  }
+  mat-drawer-container{
+    background-color: #e2e2e2;
+  }

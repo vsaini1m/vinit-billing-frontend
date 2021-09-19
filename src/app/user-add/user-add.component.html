@@ -1,0 +1,60 @@
+<div class="box">
+    <!-- username:'',
+    email:'',
+    phNumber:'',
+    address:'',
+    zipCode:'', -->
+    <mat-card style="margin-top: 30px;">
+        <form (ngSubmit)="formSubmit()">
+            <h2>Add User<mat-icon>group_add</mat-icon>
+            </h2>
+            <p>
+                <mat-form-field appearance="legacy">
+                    <mat-label>User Email</mat-label>
+                    <input name="username" [(ngModel)]="user.username" matInput placeholder="Email Here" type="email">
+                    <mat-icon matSuffix>badge</mat-icon>
+                    <mat-hint>User Email Must be unique.</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="standard">
+                    <mat-label>Full Name</mat-label>
+                    <input name="name" [(ngModel)]="user.name" matInput placeholder="Full Name here"
+                        type="text">
+                    <mat-icon matSuffix>drive_file_rename_outline</mat-icon>
+                    <mat-hint>enter Uer full name</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="standard">
+                    <mat-label>Phone number</mat-label>
+                    <input name="phNumber" [(ngModel)]="user.phNumber" matInput placeholder="Phone Number"
+                        type="number">
+                    <mat-icon matSuffix>drive_file_rename_outline</mat-icon>
+                    <mat-hint>enter User Phone Number</mat-hint>
+                </mat-form-field>
+            </p>
+
+            <p>
+                <mat-form-field appearance="standard">
+                    <mat-label>Zip Code</mat-label>
+                    <input name="zipCode" [(ngModel)]="user.zipCode" matInput placeholder="Zip code here"
+                        type="number">
+                    <mat-icon matSuffix>drive_file_rename_outline</mat-icon>
+                    <mat-hint>enter area zip code</mat-hint>
+                </mat-form-field>
+            </p>
+            <p>
+                <mat-form-field appearance="standard">
+                    <mat-label>Adress</mat-label>
+                    <input name="address" [(ngModel)]="user.address" matInput placeholder="Address here"
+                        type="text">
+                    <mat-icon matSuffix>drive_file_rename_outline</mat-icon>
+                    <mat-hint>enter User address</mat-hint>
+                </mat-form-field>
+            </p>
+            <button mat-flat-button color="primary" type="submit">Sing in</button>
+
+        </form>
+    </mat-card>
+</div>
